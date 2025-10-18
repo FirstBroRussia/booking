@@ -4,16 +4,11 @@ import { Logger, Module, OnModuleInit } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { InjectDataSource, TypeOrmModule } from '@nestjs/typeorm';
 
+import { BookingModule } from 'src/booking/booking.module';
+
 import { appEnvConfigValidateFn } from './utils/config/app-env.config';
 
 import { AppEnvInterface } from './utils/interface/app-env.interface';
-
-import { UserEntity } from './entity/user.entity';
-import { BookingEntity } from './entity/booking.entity';
-import { EventEntity } from './entity/event.entity';
-
-import { BookingRepository } from '../booking/repository/booking.repository';
-import { BookingModule } from 'src/booking/booking.module';
 
 
 
