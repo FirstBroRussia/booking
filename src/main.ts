@@ -5,8 +5,8 @@ import { Logger } from '@nestjs/common';
 import { AppModule } from './app/app.module';
 
 
-const APP_HOST = '127.0.0.1';
-const APP_PORT = 10001;
+const APP_HOST = 'localhost';
+const APP_PORT = 3000;
 
 
 async function bootstrap() {
